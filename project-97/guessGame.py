@@ -5,7 +5,7 @@ print("Welcome to the Guessing Game !!")
 
 time.sleep(1)
 
-max = 10
+max = 0
 
 chances = 2
 
@@ -13,17 +13,20 @@ print("Choose Difficulty Level ----")
 print("1 = easy")
 print("2 = normal")
 print("3 = hard")
+print("4 = impossible")
 
 difficulty = int(input("Difficulty : "))
 
 if(difficulty == 1):
     max = 10
 elif(difficulty == 2):
-    max = 20
-elif(difficulty == 3):
     max = 30
-while (difficulty <= 0 or difficulty >= 4):
-    print("Choose Difficulty Level between (1 & 3)")
+elif(difficulty == 3):
+    max = 50
+elif(difficulty == 4):
+    max = 100
+while (difficulty <= 0 or difficulty >= 5):
+    print("Choose Difficulty Level between (1 & 4)")
     difficulty = int(input("Difficulty : "))
 
 
